@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">DevPortfolio.</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Priyanshu Keshari</span></h1>
+      <p class="subtitle">A Frontend Developer building clean, interactive web experiences.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+      <div class="skill-badge">HTML5</div>
+      <div class="skill-badge">CSS3 & Flexbox/Grid</div>
+      <div class="skill-badge">JavaScript (ES6+)</div>
+      <div class="skill-badge">Responsive Design</div>
+      <div class="skill-badge">Git & GitHub</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    
+    <!-- Filter Buttons (Powered by JS) -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="js">JavaScript</button>
+      <button class="filter-btn" data-filter="css">HTML/CSS</button>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="project-grid">
+      <div class="project-card" data-category="js">
+        <h3>Weather Dashboard</h3>
+        <p>Fetches live weather data using the OpenWeather API and vanilla JS `fetch()`.</p>
+        <a href="#" class="project-link">Live Demo →</a>
+      </div>
+
+      <div class="project-card" data-category="css">
+        <h3>Landing Page Clone</h3>
+        <p>A pixel-perfect responsive product landing page built purely with CSS Grid and Flexbox.</p>
+        <a href="#" class="project-link">Live Demo →</a>
+      </div>
+
+      <div class="project-card" data-category="js">
+        <h3>Interactive Task Manager</h3>
+        <p>A to-do list application with local storage support to save tasks between sessions.</p>
+        <a href="#" class="project-link">Live Demo →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Get In Touch</h2>
+    <form id="contact-form" class="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="form-feedback" class="feedback-msg"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Alex. Built with HTML, CSS, and Vanilla JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
